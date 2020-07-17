@@ -28,7 +28,6 @@ body {
 
 footer {
     width: 100%;
-    backg//round-color: var(--clr-med);
 }
 
 h3 {
@@ -425,11 +424,13 @@ tbody {
 
 th img {
     width: 100%;
+    height: auto;
 }
 
 th {
     font-size: 3.5vw;
     display: flex;
+    align-items: flex-start;
     margin: 0.25em 0;
 }
 
@@ -464,6 +465,7 @@ th:nth-child(2) {
 
 .contacts-grid {
     display: flex;
+    height: auto;
     justify-content: center;
     background-color: var(--clr-med);
 }
@@ -561,6 +563,7 @@ th:nth-child(2) {
    .contacts-portrait-box {
     display: flex;
     visibility: visible;
+    align-items: flex-start;
     width: 40%;
     padding: 1em;
     margin: 0em;
