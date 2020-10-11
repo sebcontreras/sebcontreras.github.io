@@ -69,8 +69,8 @@ button {
 }
 
 .project-loop-box {
-    min-height: 500px;
-    max-height: 600px;
+    min-height: 600px;
+    max-height: 700px;
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 0.6fr 1fr 0.6fr;
@@ -514,7 +514,7 @@ th:nth-child(2) {
     padding-top: 0.5em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
    .navigation-option {
     font-size: 1.5em;
    }
@@ -535,6 +535,7 @@ th:nth-child(2) {
    .introduction-paragraph {
        width: fit-content;
        height: fit-content;
+       font-size: 1.5em;
        z-index: 1;
        padding: 2em;
        background-color: white;
@@ -557,7 +558,19 @@ th:nth-child(2) {
 
    .project-previews {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+   }
+
+   .project-preview-box {
+       width: 35%;
+       max-width: 800px;
+       height: min-content;
+   }
+
+   .project-preview-pic {
+       height: fit-content;
+       max-height: 1000px;
+       object-fit: cover;
    }
 
    .contacts-portrait-box {
