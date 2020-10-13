@@ -647,6 +647,8 @@ th:nth-child(2) {
 
     .project-info-text-box {
         flex: 1 1 10%;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
     }
 
     .project-info-img-box {
