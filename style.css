@@ -303,6 +303,7 @@ header {
     background-color: white;
     padding: 0.5em;
     text-align: center;
+    font-size: 1.5em;
 }
 
 .SC-portrait-image {
@@ -571,6 +572,8 @@ th:nth-child(2) {
    }
    
     .introduction {
+       max-width: 1750px;
+       margin: 0 auto;
        display: grid;
        grid-template-columns: repeat(6, 1fr);
        grid-template-rows: 0.4fr repeat(4, 1fr) 0.4fr;
