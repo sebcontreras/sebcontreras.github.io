@@ -69,8 +69,8 @@ button {
 }
 
 .project-loop-box {
-    min-height: 500px;
-    max-height: 600px;
+    min-height: 600px;
+    max-height: 700px;
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 0.6fr 1fr 0.6fr;
@@ -303,6 +303,7 @@ header {
     background-color: white;
     padding: 0.5em;
     text-align: center;
+    font-size: 1.5em;
 }
 
 .SC-portrait-image {
@@ -514,12 +515,65 @@ th:nth-child(2) {
     padding-top: 0.5em;
 }
 
-@media (min-width: 800px) {
+.projects-box {
+    background-color: var(--clr-light);
+    padding-bottom: 1.5em;
+    --clr-text: #190934;
+    display: flex;
+    flex-direction: column;
+    padding: 0.75em;
+}
+
+.project-info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    padding: 0.5em;
+    padding-bottom: 5em;
+}
+
+.project-info-title {
+    font-size: 2.5em;
+    font-weight: 500;
+    text-decoration: none;
+    text-shadow: 0.25px 0.25px black;
+}
+
+.project-info-description {
+    font-size: 1.25em;
+}
+
+.project-info-img-box {
+    margin: 0 auto;
+}
+
+.project-info-image {
+    align-self: center;
+}
+
+.project-info-image2 {
+    visibility: hidden;
+    position: absolute;
+    left: -1000px;
+}
+
+#car-dash-project-text {
+    padding-left: 1em;
+}
+
+.projects-box:last-child {
+    padding-bottom: 0%;
+}
+
+@media (min-width: 1000px) {
    .navigation-option {
     font-size: 1.5em;
    }
    
     .introduction {
+       max-width: 1750px;
+       margin: 0 auto;
        display: grid;
        grid-template-columns: repeat(6, 1fr);
        grid-template-rows: 0.4fr repeat(4, 1fr) 0.4fr;
@@ -535,6 +589,7 @@ th:nth-child(2) {
    .introduction-paragraph {
        width: fit-content;
        height: fit-content;
+       font-size: 1.5em;
        z-index: 1;
        padding: 2em;
        background-color: white;
@@ -557,17 +612,68 @@ th:nth-child(2) {
 
    .project-previews {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+   }
+
+   .project-preview-box {
+       width: 35%;
+       max-width: 800px;
+       height: min-content;
+   }
+
+   .project-preview-pic {
+       height: fit-content;
+       max-height: 1000px;
+       object-fit: cover;
    }
 
    .contacts-portrait-box {
-    display: flex;
-    visibility: visible;
-    align-items: flex-start;
-    width: 40%;
-    padding: 1em;
-    margin: 0em;
-    padding-left: 0em;
+        display: flex;
+        visibility: visible;
+        align-items: flex-start;
+        width: 40%;
+        padding: 1em;
+        margin: 0em;
+        padding-left: 0em;
    }
+
+   .projects-box {
+        width: 100%;
+        max-width: 2000px;
+        margin: 0 auto;
+    }   
+
+    .project-info-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .project-info-text-box {
+        flex: 1 1 10%;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+    }
+
+    .project-info-img-box {
+        width: 100%;
+        height: auto;
+        flex: 2 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .project-info-image {
+        padding: 1em;
+        padding-right: 0.5em;
+    }
+
+    .project-info-image2 {
+        visibility: visible;
+        position: relative;
+        left: 0;
+        padding: 1em;
+        padding-left: 0.5em;
+    }
    
 }

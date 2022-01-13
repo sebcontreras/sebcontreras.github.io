@@ -5,7 +5,10 @@
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Sebastian Contreras - Home</title>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <script></script>
     <style></style>
@@ -17,7 +20,7 @@
     <div class="main-grid">
         <header>
             <div class="logo-box">
-                <a href="index.html"><img class="logo" src="images/SC-logo.png" alt=""></a>
+                <a href="index.html"><img class="logo" src="public/images/SC-logo.png" alt=""></a>
             </div>
             <nav class="nav">
                 <a href="index.html" class="navigation-option">Home</a>
@@ -29,7 +32,91 @@
         </header>
 
         <main>
+            <h2 class="projects-box-title">Projects</h2>
+            <div class="projects-box">
+                <div id="image-annotation-project" class="project-info-box">
+                    <div class="project-info-text-box">
+                        <a href="https://sebcontreras.github.io/Image-Annotation-Tool/" class="project-info-title">Image
+                            Annotation Tool</a>
+                        <p class="project-info-description">
+                            Using TypeScript I created a tool that allows users to upload an image and highlight points
+                            of interest/disinterest on
+                            said image. When the user presses the output button, a JSON file is produced which holds the
+                            coordinates of each
+                            annotation relative to the image.
+                        </p>
+                    </div>
+                    <div class="project-info-img-box">
+                        <a href="https://sebcontreras.github.io/Image-Annotation-Tool/">
+                            <video class="projects-video-loop" autoplay loop muted>
+                                <source src="public/images/ImageAnnotationProjectDemo.mp4" type="video/mp4" />
+                            </video>
+                        </a>
+                    </div>
+                </div>
+                <div id="course-registration-project" class="project-info-box">
+                    <div class="project-info-img-box">
+                        <a href="https://github.com/sebcontreras/Course-Registration-System" class="project-info-image">
+                            <img src="public/images/coourse-registration-preview.png" alt="Image preview of project">
+                        </a>
+                        <a href="https://github.com/sebcontreras/Course-Registration-System"
+                            class="project-info-image2">
+                            <img src="public/images/course-registration-preview2.png" alt="Image preview of project">
+                        </a>
+                    </div>
+                    <div class="project-info-text-box">
+                        <a href="https://github.com/sebcontreras/Course-Registration-System"
+                            class="project-info-title">Course Registration System</a>
+                        <p class="project-info-description">
+                            Worked remotely with two classmates to design and implement an application to register for
+                            school courses. Server is
+                            able to host multiple clients on different machines, client side built using Java GUI, SQL
+                            database used to track class
+                            list and availability.
+                        </p>
+                    </div>
+                </div>
+                <div id="calculator-project" class="project-info-box">
+                    <div class="project-info-text-box">
+                        <a href="https://sebcontreras.github.io/JavaScript-Calculator/"
+                            class="project-info-title">Javascript Calculator</a>
+                        <p class="project-info-description">
+                            Built a multifunction calculator with the ability to
+                            backspace and compute basic
+                            order of operations. Styled with CSS to resemble an Apple iPhone calculator.
+                        </p>
+                    </div>
+                    <div class="project-info-img-box">
+                        <a href="https://sebcontreras.github.io/JavaScript-Calculator/" class="project-info-image">
+                            <img src="public/images/calculator2.png" alt="Image preview of project">
+                        </a>
+                        <a href="https://sebcontreras.github.io/JavaScript-Calculator/" class="project-info-image2">
+                            <img src="public/images/calculator.png" alt="Image preview of project">
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info-box">
+                    <div class="project-info-img-box">
+                        <a href="https://github.com/sebcontreras/Car-Dashboard-Simulator">
+                            <video class="projects-video-loop" autoplay loop muted>
+                                <source src="public/images/CarDashboardProjectDemo.mp4" type="video/mp4" />
+                            </video>
+                        </a>
+                    </div>
+                    <div class="project-info-text-box" id="car-dash-project-text">
+                        <a href="https://github.com/sebcontreras/Car-Dashboard-Simulator" class="project-info-title">Car
+                            Dashboard</a>
+                        <p class="project-info-description">
+                            An input file containing the distance travelled, rpm and fuel tank level of a commuter
+                            vehicle over a 10-minute period
+                            was provided to us. Using this data I converted the input values into speed, logged fuel
+                            economy, range and displayed
+                            them in real time on a simulated on-screen car gauge.
+                        </p>
+                    </div>
+                </div>
 
+            </div>
         </main>
 
         <footer>
@@ -37,13 +124,13 @@
             <div class="social-links-box">
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/sebcontreras/" class="linkedin-link" aria-label="LinkedIn">
-                        <img src="images/linkedin.png" alt="LinkedIn" class="social-img">
+                        <img src="public/images/linkedin.png" alt="LinkedIn" class="social-img">
                     </a>
                     <a href="https://www.instagram.com/sebsucks/" class="instagram-link" aria-label="Instagram">
-                        <img src="images/instagram.png" alt="Instagram" class="social-img">
+                        <img src="public/images/instagram.png" alt="Instagram" class="social-img">
                     </a>
                     <a href="https://www.facebook.com/" class="facebook-link" aria-label="Facebook">
-                        <img src="images/facebook.png" alt="Facebook" class="social-img">
+                        <img src="public/images/facebook.png" alt="Facebook" class="social-img">
                     </a>
                 </div>
             </div>
