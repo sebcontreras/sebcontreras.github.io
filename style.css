@@ -72,8 +72,8 @@ button {
     min-height: 600px;
     max-height: 700px;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: 0.6fr 1fr 0.6fr;
+    grid-template-columns: 0.5fr 0.3fr 0.5fr;
+    grid-template-rows: 0.6fr 0.7fr 0.6fr;
 }
 
 .projects-video-loop {
@@ -120,7 +120,6 @@ button {
 }
 
 .projects {
-    background-color: var(--clr-med);
     padding-bottom: 1.5em;
 }
 
@@ -608,6 +607,11 @@ th:nth-child(2) {
 
    .button1 {
     font-size: 1.2em;
+   }
+
+   .content-box {
+       max-width: 80%;
+       margin: 0 auto;
    }
 
    .project-previews {
