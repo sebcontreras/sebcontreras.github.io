@@ -414,17 +414,18 @@ header {
 .contacts-table {
     width: 80%;
     justify-content: center;
-    background-color: var(--clr-med);
+    background-color: white;
     display: flex;
     padding: 1em;
     padding-right: 0em;
+    border-radius: 10px;
 }
 
 tbody {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--clr-med);
+    background-color: white;
     justify-content: center;
     align-items: flex-start;
 }
@@ -468,13 +469,15 @@ th:nth-child(2) {
 .contacts-portrait-box {
     display: none;
     visibility: hidden;
+    border-radius: 10px;
 }
 
 .contacts-grid {
     display: flex;
     height: auto;
     justify-content: center;
-    background-color: var(--clr-med);
+    background-color: white;
+    border-radius: 10px;
 }
 
 .portfolio {
@@ -518,7 +521,7 @@ th:nth-child(2) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    background-color: var(--clr-med);
+    background-color: white;
     padding-top: 0.5em;
     border-radius: 10px;
 }
@@ -608,7 +611,7 @@ th:nth-child(2) {
    }
 
    .welcome-box {
-       height: 500px;
+       height: 300px;
        display: grid;
    }
 
@@ -650,6 +653,7 @@ th:nth-child(2) {
         padding: 1em;
         margin: 0em;
         padding-left: 0em;
+        border-radius: 10px;
    }
 
    .projects-box {
