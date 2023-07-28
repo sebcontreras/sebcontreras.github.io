@@ -83,6 +83,7 @@ button {
     width: 100%;
     grid-column: 1 / span 4;
     grid-row: 1 / span 4;
+    border-radius: 10px;
 }
 
 .project-loop-text {
@@ -241,6 +242,7 @@ header {
     margin: 1em 0 0;
     background-color: white;
     max-height: 150px;
+    border-radius: 10px 10px 0 0;
 }
 
 .nav {
@@ -290,6 +292,7 @@ header {
     width: 100%;
     grid-column: 1 /span 4;
     grid-row: 1 / span 4;
+    border-radius: 0 0 10px 10px;
 }
 
 .introduction {
@@ -321,6 +324,7 @@ header {
 .youtube-video-loop {
     object-fit: cover;
     display: block;
+    border-radius: 10px;
     height: 100%;
     width: 100%;
     grid-column: 1 / span 4;
@@ -367,6 +371,7 @@ header {
     min-height: 500px;
     max-height: 600px;
     width: 100%;
+    border-radius: 10px;
     object-fit: cover;
 }
 
@@ -391,7 +396,9 @@ header {
 }
 
 .contact-box {
-    width: 100%;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -428,7 +435,7 @@ th img {
 }
 
 th {
-    font-size: 3.5vw;
+    font-size: max(1.6vw, 1.5em);
     display: flex;
     align-items: flex-start;
     margin: 0.25em 0;
@@ -480,6 +487,7 @@ th:nth-child(2) {
 
 .portfolio-item-box {
     display: flex;
+    padding: 1em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -491,7 +499,7 @@ th:nth-child(2) {
 }
 
 .portfolio-img-box {
-    width: 60%;
+    width: 40%;
     object-fit: contain;
     display: flex;
     justify-content: center;
@@ -499,19 +507,20 @@ th:nth-child(2) {
 }
 
 .portfolio-label {
-    font-size: 3vw;
+    font-size: 2em;
     margin: 0em;
 }
 
 .portfolio-links {
-    width: 80%;
+    width: 100%;
     text-align: center;
     max-width: 800px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     background-color: var(--clr-med);
     padding-top: 0.5em;
+    border-radius: 10px;
 }
 
 .projects-box {
@@ -583,6 +592,7 @@ th:nth-child(2) {
        max-width: 75%;
        grid-column: 3 / span 6;
        grid-row: 2 / span 4;
+       border-radius: 10px;
    }
 
    .introduction-paragraph {
@@ -594,6 +604,7 @@ th:nth-child(2) {
        background-color: white;
        grid-column: 1 / span 3;
        grid-row: 3 / span 5;
+       border-radius: 10px;
    }
 
    .welcome-box {
