@@ -577,6 +577,54 @@ th:nth-child(2) {
     padding-bottom: 0%;
 }
 
+.banner-box {
+    height: 150px;
+    display: grid;
+    margin: 0 0 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+}
+
+.banner-title {
+    font-size: 4em;
+    margin-top: 10px;
+    font-style: italic;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner-background-image {
+    object-fit: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+    grid-column: 1 /span 4;
+    grid-row: 1 / span 4;
+    border-radius: 0 0 10px 10px;
+}
+
+.about-me-box {
+    background-color: white;
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 1em;
+}
+
+.about-me-text {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    font-size: 1.2em;
+}
+
 @media (min-width: 1000px) {
    .navigation-option {
     font-size: 1.5em;
