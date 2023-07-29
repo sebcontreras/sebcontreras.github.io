@@ -255,7 +255,7 @@ header {
 .navigation-option {
     text-decoration: none;
     color: black;
-    font-size: 1.0em;
+    font-size: 2em;
 }
 
 .navigation-option:hover{
@@ -264,6 +264,8 @@ header {
 
 .main-grid {
     background-color:var(--clr-background);
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 .welcome-box {
@@ -607,64 +609,38 @@ th:nth-child(2) {
     border-radius: 0 0 10px 10px;
 }
 
-.about-me-box {
-    background-color: white;
-    width: 100%;
-    max-width: 1500px;
-    height: auto;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.5fr;
-    grid-template-rows: 0.2fr 1fr 0.2fr;
-    padding: 2em 1em 1em 1em;
-    border-radius: 0 0 10px 10px;
-}
-
 .about-me-title {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
-    font-size: 1.2em;
     color: black;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     font-style: italic;
     text-shadow: none;
 }
 
-.about-me-text {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
-    font-size: 1.2em;
-    padding: 0 1em;
-}
-
-.about-me-portrait {
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 3;
-}
-
-.about-me-box-wrap {
+.about-me-box {
     width: 100%;
-    max-width: 1500px;
-    height: auto;
+    height: max-content;
     margin: 0 auto;
     padding: 2em;
     border-radius: 0 0 10px 10px;
     background-color: white;
     text-align: left;
+    overflow: hidden;
 }
 
-.about-me-portrait-wrap {
+.about-me-portrait {
     float: right;
     width: 40%;
-    max-width: 600px;
-    padding: 4em 1em;
+    height: auto;
+    max-width: 500px;
+    padding: 4em 1em 0em;
 }
 
-.about-me-text-wrap {
-    text-align: justify;
-    font-size: 1.2em;
-    padding: 0 1em;
+.about-me-text {
+    font-size: 1.5em;
+    padding: 1em 1em 0em 0em;
 }
 
 @media (min-width: 1000px) {
@@ -783,6 +759,14 @@ th:nth-child(2) {
         left: 0;
         padding: 1em;
         padding-left: 0.5em;
+    }
+
+    .about-me-text {
+        font-size: 1.5em;
+    }
+
+    .about-me-box {
+        padding: 2em 10em 2em 10em;
     }
    
 }
