@@ -417,6 +417,13 @@ header {
     margin-bottom: 0.5em;
 }
 
+.page-title {
+    display: flex;
+    justify-content: center;
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+}
+
 .contacts-table {
     width: 80%;
     justify-content: center;
@@ -533,21 +540,20 @@ th:nth-child(2) {
 }
 
 .projects-box {
-    background-color: var(--clr-light);
     padding-bottom: 1.5em;
     --clr-text: #190934;
-    display: flex;
-    flex-direction: column;
     padding: 0.75em;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #5DDDFA;
 }
 
 .project-info-box {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+    background-color: white;
     width: 100%;
-    padding: 0.5em;
-    padding-bottom: 5em;
+    padding: 1em 2em 2em 2em;
+    margin: 1em auto;
+    border-radius: 10px;
 }
 
 .project-info-title {
@@ -555,6 +561,12 @@ th:nth-child(2) {
     font-weight: 500;
     text-decoration: none;
     text-shadow: 0.25px 0.25px black;
+    text-align: center;
+}
+
+.project-info-title-box {
+    margin: 0 auto;
+    text-align: center;
 }
 
 .project-info-description {
@@ -563,6 +575,8 @@ th:nth-child(2) {
 
 .project-info-img-box {
     margin: 0 auto;
+    overflow: hidden;
+    padding: 1em 0;
 }
 
 .project-info-image {
@@ -630,7 +644,7 @@ th:nth-child(2) {
 }
 
 .about-me-box {
-    width: 80%;
+    width: 100%;
     height: max-content;
     margin: 1em auto;
     padding: 2em;
@@ -733,29 +747,27 @@ th:nth-child(2) {
    }
 
    .projects-box {
-        width: 100%;
+        width: 80%;
         max-width: 2000px;
-        margin: 0 auto;
     }   
 
     .project-info-box {
-        display: flex;
-        flex-direction: row;
+        text-align: left;
+        padding: 2em 2em 2em 2em;
+        margin: 1em auto;
     }
 
     .project-info-text-box {
-        flex: 1 1 10%;
-        padding-right: 0.5em;
-        padding-left: 0.5em;
+        font-size: 1.2em;
+        padding: 1em 1em 0em 1em;
     }
 
     .project-info-img-box {
-        width: 100%;
+        width: 60%;
         height: auto;
-        flex: 2 1;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        float: right;
+        max-width: 1500px;
+        padding: 3em 1em 0em 1.5em;
     }
 
     .project-info-image {
@@ -776,6 +788,7 @@ th:nth-child(2) {
     }
 
     .about-me-box {
+        width: 80%;
         padding: 2em 7em 2em 7em;
     }
    
