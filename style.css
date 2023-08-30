@@ -545,7 +545,6 @@ th:nth-child(2) {
     padding: 0.75em;
     margin: 0 auto;
     width: 100%;
-    background-color: #5DDDFA;
 }
 
 .project-info-box {
@@ -766,6 +765,7 @@ th:nth-child(2) {
     .project-info-text-box {
         font-size: 1.2em;
         padding: 1em 1em 0em 1em;
+        width: 100%;
     }
 
     .project-info-img-box {
@@ -774,6 +774,23 @@ th:nth-child(2) {
         float: right;
         max-width: 1500px;
         padding: 3em 1em 0em 1.5em;
+    }
+
+    #project-info-img-box-ikea {
+        width: 50%;
+        height: auto;
+        float: left;
+        max-width: 2000px;
+        padding: 0em 2em 0em 1em;
+    }
+
+    #second {
+        padding: 0.2em 2em 0em 0em;
+    }
+
+    .bozo {
+        display: block;
+        margin: auto;
     }
 
     .project-info-image {

@@ -55,14 +55,13 @@
               >
             </div>
             <div class="project-info-img-box">
-              <a
-                href="https://github.com/sebcontreras/RPS/"
-                class="project-info-image"
-              >
-                <img
-                  src="public/images/calculator.png"
-                  alt="Image preview of project"
-                />
+              <a href="https://github.com/sebcontreras//">
+                <video class="projects-video-loop" autoplay loop muted>
+                  <source
+                    src="public/images/RPSDemoEdited.mp4"
+                    type="video/mp4"
+                  />
+                </video>
               </a>
             </div>
             <div class="project-info-text-box">
@@ -92,8 +91,8 @@
                 testing or validating location based software. Not only will the
                 application be used for TripSpark’s software developers, it can
                 also be used by TripSpark’s customer care agents or deployment
-                specialists to explain GPS behaviour and phenomenon to clients
-                or to help them improve their fleet’s GPS reception by better
+                specialists to explain GPS behavior and phenomenon to clients or
+                to help them improve their fleet’s GPS reception by better
                 analyzing GPS data.
                 <br /><br />
                 Unlike many other Capstone projects that are inherited from
@@ -103,7 +102,9 @@
                 undertaking for our small development team that was also
                 juggling several other final year courses. I am proud to say
                 that we were able to complete the project, delivering on all
-                aforementioned features and much more.
+                aforementioned features and much more. The tool is currently
+                being used by TripSpark employees to assist in their everyday
+                work.
                 <br /><br />
                 To complete this project as gracefully as we did, a lot of
                 planning took place. We set our team up with interim milestones
@@ -111,7 +112,7 @@
                 several design and redesign phases based on shifting project
                 requirements and uncovered platform limitations. We followed an
                 agile development process, partaking in sprints and dividing
-                large tasks into ____ tickets. We designed the project
+                large tasks into actionable tickets. We designed the project
                 architecture, adhering to object-oriented design principles and
                 a Model-View-ViewModel (MVVM) design pattern. We made mockups,
                 following UX design principles and sponsor feedback to achieve
@@ -142,23 +143,23 @@
                 true when the vehicle is moving in a route that overlaps several
                 times over (which is common for many of TripSpark’s transit
                 clients). But what if the user did want to move that point in
-                the timeline? What if this specific area or was a point of
-                interest for them, and they wanted to resume playback from that
-                point in time. Upon thinking about this use case, I suggested
-                the idea that a double-click on a point, should move playback to
-                said point. The group along with the sponsor agreed that this
-                would be very useful.
+                the timeline? What if this specific area was a point of interest
+                for them, and they wanted to resume playback from that point in
+                time. Upon considering this use case, I suggested the idea that
+                a double-click on a point should move playback to said point.
+                The group along with the sponsor agreed that this would be very
+                useful.
                 <br /><br />
                 Reality (which for developers consists of the chosen platform)
-                however, can often be disappointing. Due to MAUI’s
-                multi-platform capabilities, double-click is not an actionable
-                event. When this was discovered during a design meeting, we
-                tried and failed to come up with a workaround. We had no choice
-                but to scrap the double-click feature. This would be
-                disappointing for the sponsor as this was one of the features we
-                had promised, but there is only so much that us as developers
-                can do when bounded by technological limitations. We had to move
-                on with the meeting and the project.
+                can often be disappointing. Due to MAUI’s multi-platform
+                capabilities, double-click is not an actionable event. When this
+                was discovered during a design meeting, we tried and failed to
+                come up with a workaround. We had no choice but to scrap the
+                double-click feature. This would be disappointing for the
+                sponsor as this was one of the features we had promised, but
+                there is only so much that us as developers can do when bounded
+                by technological limitations. We had to move on with the meeting
+                and the project.
                 <br /><br />
                 As the meeting went on however, I could not stop thinking about
                 this conundrum. I thought back to how excited TripSpark was when
@@ -187,7 +188,7 @@
                 accomplishments (including this project) to my competence in
                 this skill.
                 <br /><br />
-                2. Mr. Playback
+                1. Mr. Playback
                 <br /><br />
                 One key feature of this application was the ability to simulate
                 real-time GPS playback. Let me explain what that means. Our
@@ -231,8 +232,9 @@
                 being triggered on their end (frontend), so that I could make
                 the playback (backend) react accordingly. Collaborations like
                 this didn’t just happen by chance. They were predetermined
-                during our sprint planning. In the end, planning is the fuel
-                that makes the development train roll.
+                during our sprint planning. Although it’s not always the most
+                exciting part of our job, planning is the fuel that makes the
+                development train roll.
               </p>
             </div>
           </div>
@@ -245,7 +247,10 @@
               >
             </div>
             <div class="project-info-img-box">
-              <a href="https://github.com/sebcontreras//">
+              <a
+                href="https://github.com/sebcontreras//"
+                class="project-info-image"
+              >
                 <video class="projects-video-loop" autoplay loop muted>
                   <source
                     src="public/images/InstasearchDemo720.mp4"
@@ -281,7 +286,17 @@
                 accumulated an entire shopping list worth of IKEA furniture.
                 Maybe you’ve even forgotten why you came to IKEA in the first
                 place.
-                <br /><br />
+              </p>
+            </div>
+            <div class="project-info-img-box" id="project-info-img-box-ikea">
+              <img
+                class="project-info-image"
+                src="public/images/ikeaStoreLayout.jpg"
+                alt="Image preview of project"
+              />
+            </div>
+            <div class="project-info-text-box" id="second">
+              <p class="project-info-description">
                 IKEA and Instagram follow the same design principle of being
                 inefficient by design. On route to finding that one post you
                 came for, the algorithm bombards you with dozens of posts that
@@ -339,13 +354,13 @@
                 to give you a tour.
                 <br /><br />
                 - Modern image recognition software is incredibly powerful (see
-                Google Vision AI). However, it’s also incredibly expensive to
-                process a large number of images. For this reason, Meta has
-                chosen to go with a very simple image recognition system. This
-                system is excellent at reading text from an image, but it
-                struggles to detect objects and finer details. This limits the
-                search capabilities of this application.
-                <br /><br />
+                <a href="https://cloud.google.com/vision">Google Vision AI</a>).
+                However, it’s also incredibly expensive to process a large
+                number of images. For this reason, Meta has chosen to go with a
+                very simple image recognition system. This system is excellent
+                at reading text from an image, but it struggles to detect
+                objects and finer details. This limits the search capabilities
+                of this application. <br /><br />
                 - If you are wondering why I don’t run each image through a
                 superior third part image recognition software, there are two
                 main reasons. The first is that each image could take up to
