@@ -568,24 +568,29 @@ th:nth-child(2) {
     text-align: center;
 }
 
-.project-info-description {
-    font-size: 1.25em;
+.project-info-text-box {
+    font-size: 1.7em;
 }
 
 .project-info-img-box {
     margin: 0 auto;
     overflow: hidden;
     padding: 1em 0;
+    text-align: center;
+}
+
+#project-info-img-box-ikea {
+    width: 80%;
+    margin: auto;
+    padding: 0em;
+}
+
+#calculator-box {
+    max-width: 500px;
 }
 
 .project-info-image {
-    align-self: center;
-}
-
-.project-info-image2 {
-    visibility: hidden;
-    position: absolute;
-    left: -1000px;
+    margin: auto;
 }
 
 #car-dash-project-text {
@@ -763,9 +768,9 @@ th:nth-child(2) {
     }
 
     .project-info-text-box {
-        font-size: 1.2em;
         padding: 1em 1em 0em 1em;
         width: 100%;
+        font-size: 1.5em;
     }
 
     .project-info-img-box {
