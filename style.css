@@ -33,7 +33,7 @@ footer {
 h4 {
     font-size: 1.2em;
     margin: 0;
-    padding-bottom: 0.5em;
+    padding: 0.8em 0 0.2em 0.3em;
 }
 
 h3 {
@@ -616,6 +616,10 @@ th:nth-child(2) {
     font-size: 1.7em;
 }
 
+.project-info-description {
+    margin: 0.5em;
+}
+
 .project-info-img-box {
     margin: 0 auto;
     overflow: hidden;
@@ -626,6 +630,12 @@ th:nth-child(2) {
 }
 
 #project-info-img-box-ikea {
+    width: 80%;
+    margin: auto;
+    padding: 0em;
+}
+
+#project-info-img-box-rps {
     width: 80%;
     margin: auto;
     padding: 0em;
@@ -811,12 +821,12 @@ th:nth-child(2) {
 
     .project-info-box {
         text-align: left;
-        padding: 2em 3em 2em 3em;
+        padding: 2em 4em 2em 4em;
         margin: 1em 0em 6em 0em;
     }
 
     .project-info-text-box {
-        padding: 1em 1em 0em 1em;
+        padding: 0em 1em 0em 1em;
         width: 100%;
         font-size: 1.5em;
     }
@@ -837,8 +847,12 @@ th:nth-child(2) {
         padding: 0em 2em 0em 1em;
     }
 
-    #second {
-        padding: 0.2em 2em 0em 0em;
+    #project-info-img-box-rps {
+        width: 50%;
+        height: auto;
+        float: left;
+        max-width: 2000px;
+        padding: 0em 2em 0em 1em;
     }
 
     .bozo {
