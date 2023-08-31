@@ -46,6 +46,156 @@
       <main>
         <h2 class="page-title">Projects</h2>
         <div class="projects-box">
+          <div id="instasearch-project" class="project-info-box">
+            <div class="project-info-title-box">
+              <a
+                href="https://github.com/sebcontreras/"
+                class="project-info-title"
+                >Instasearch</a
+              >
+            </div>
+            <div class="project-info-img-box">
+              <a
+                href="https://github.com/sebcontreras//"
+                class="project-info-image"
+              >
+                <video class="projects-video-loop" autoplay loop muted>
+                  <source
+                    src="public/images/InstasearchDemo720.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+            </div>
+            <div class="project-info-text-box">
+              <p class="project-info-description">
+                The best way to explain this project is by first describing the
+                incident that inspired it.
+                <br /><br />
+                A few years ago I was conversing in the car with some friends,
+                when I was suddenly reminded of a meme I had seen on Instagram.
+                The meme was hilarious and more importantly it tied in perfectly
+                with the conversation we were having. I had to find it. I pulled
+                up Instagram and began my search. Although this post was only
+                from a few days ago, the <b>unchronological timeline, limited
+                search functionality and overwhelming amount of content</b> rendered
+                my search futile.
+                <br /><br />
+                The struggle to find specific posts on a social media platform
+                is of course, largely by design. It’s something I like to call
+                the “IKEA Model”. To illustrate my point, imagine you are
+                shopping for a bed at IKEA. You walk into the store and follow
+                the only path available through the the retail displays. On the
+                way to the bedroom section, you walk through kitchens, living
+                rooms, dining halls and workspaces. It’s not long until the
+                intrusive thoughts kick in: “Ooh that’s a nice table, maybe I’ll
+                get that as well”, “this rug would look great in the living
+                room”. By the time you’ve made it to the beds, you’ve already
+                accumulated an entire shopping list worth of IKEA furniture.
+                Maybe you’ve even forgotten why you came to IKEA in the first
+                place.
+              </p>
+            </div>
+            <div class="project-info-img-box" id="project-info-img-box-ikea">
+              <img
+                class="project-info-image"
+                src="public/images/ikeaStoreLayout.jpg"
+                alt="Image preview of project"
+              />
+            </div>
+            <div class="project-info-text-box" id="second">
+              <p class="project-info-description">
+                IKEA and Instagram follow the same design principle of being
+                inefficient by design. On route to finding that one post you
+                came for, the algorithm bombards you with dozens of posts that
+                it knows you’ll like. <b>These companies don’t value your time,
+                they value your attention.</b>
+                <br /><br />
+                Fast forward to a couple of months later. I had learned a bit
+                about web development and as a result I found it amusing to use
+                `<i>Inspect Element</i>` on websites to see how they are built. Around
+                the same time I had also become fascinated by image recognition
+                software (see my `Image Recognition Tool` project below for more
+                on this). These two new interests would collide one evening when
+                I performed inspect element on an Instagram post and saw the
+                following under the '<i>alt text</i>' of the image:
+                <br /><br />
+                <em
+                  >"This photo may contain text that says 'US OPEN' 2 people,
+                  outdoors, tennis, Serena Williams"</em
+                >
+                <br /><br />
+                Woah. It appeared as though Instagram had used automated image
+                recognition software to decipher the contents of the image
+                (<i>check out </i><a>this article to find out why</a>). Something clicked.
+                Could I use this information to build my own advanced Instagram
+                search engine? At this moment, Instasearch was born. Here’s how
+                it works:
+                <ol>
+                  <li>
+                    <b>Open the ‘Instasearch' Node.js app</b> and remotely log into your
+                    Instagram account.
+                  </li>
+                  <li>
+                    <b>Type in some key words</b> related to the post that you are
+                    attempting to find (eg. soccer, field, ball, outdoors, ‘when
+                    you’re trying to…’), as well as the page name (eg. complex,
+                    babyyodamemes, serenawilliams).
+                  </li>
+                  <li>
+                    <b>Press enter and wait for Instasearch to do its thing.</b> In the
+                    background, it is using a headless Chrome browser controlled by
+                    Puppeteer API to scroll through the provided Instagram page. In
+                    less than a minute, it’s able to scroll through over 100 posts,
+                    retrieving the ‘alt text’ of each image.
+                  </li>
+                  <li>
+                    <b>Once complete, Instasearch will return the links</b> and ‘alt
+                    text’ of the posts with the most keyword matches.
+                  </li>
+                  <li>
+                    <b>If at this point if you still haven’t found the post</b> that
+                    you’re after, you can increase the search count, add more
+                    keywords or try a different account.
+                  </li>
+                </ol>
+                <br />
+                Now let’s talk about some of the shortcomings of this project:
+                <ul>
+                  <li>For starter’s this project falls under the legal grey area of
+                  ’web scrapping’. For this reason, I have decided it would be
+                  unwise to publish this project. However, if you would like a
+                  demo of this project or a peep into the code, I would be happy
+                  to give you a tour.
+                  </li>
+                  <li>Modern image recognition software is incredibly powerful (see
+                  <a href="https://cloud.google.com/vision">Google Vision AI</a>).
+                  However, it’s also incredibly expensive to process a large
+                  number of images. For this reason, Meta has chosen to go with a
+                  very simple image recognition system. This system is excellent
+                  at reading text from an image, but it struggles to detect
+                  objects and finer details. This limits the search capabilities
+                  of this application.
+                  </li>
+                  <li>If you are wondering why I don’t run each image through a
+                  superior third part image recognition software, there are two
+                  main reasons. The first is that each image could take up to
+                  several minutes to process. This means that a simple 100 post
+                  search could take hours. The second reason is cost. As
+                  previously mentioned, this software is expensive and not meant
+                  for mass image processing.
+                  </li>
+                </ul>
+                That’s Instasearch, my humble effort at fighting back against
+                the evils of the algorithm. I am very proud of this project. For
+                me, it marked the first time I used my programming skills to
+                solve a problem that I had. This was not an assignment or a
+                resume booster, it was a passion project. Something that I would
+                work on every couple of months, each time returning with more
+                refined skills and an equal hatred of social media.
+              </p>
+            </div>
+          </div>
           <div class="project-info-box">
             <div class="project-info-title-box">
               <a
@@ -84,8 +234,8 @@
                 project.
                 <br /><br />
                 The solution aimed to improve troubleshooting GPS-related bugs
-                and issues by providing TripSpark with an application to
-                visualize GPS data and simulate vehicle movement in the field. A
+                and issues by providing TripSpark with <b>an application to
+                visualize GPS data and simulate vehicle movement in the field.</b> A
                 data visualization and replay tool will decrease the amount of
                 time spent troubleshooting, reproducing GPS related bugs and
                 testing or validating location based software. Not only will the
@@ -114,7 +264,7 @@
                 agile development process, partaking in sprints and dividing
                 large tasks into actionable tickets. We designed the project
                 architecture, adhering to object-oriented design principles and
-                a Model-View-ViewModel (MVVM) design pattern. We made mockups,
+                a <a href="https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm">Model-View-ViewModel (MVVM) design pattern.</a> We made mockups,
                 following UX design principles and sponsor feedback to achieve
                 the optimal end-user experience. We went through strenuous code
                 reviews and design meetings to ensure our code not only worked,
@@ -123,14 +273,12 @@
                 <br /><br />
                 Although I could not have done this project on my own, I must
                 now talk about my personal contributions. This is, after all, a
-                personal portfolio. I will list them in order of what I think my
-                biggest contributions were.
-                <br /><br />
-                1. Creative solutions
-                <br /><br />
+                personal portfolio. I will list what I believe were my two biggest 
+                contributions to this project:
+                <h4>1. Creative solutions</h4>
                 I believe that one of the biggest assets I brought to this
-                project is my open-minded and creative approach to problem
-                solving. This is hard to quantify, so I will attempt to do so by
+                project is my <b>open-minded and creative approach to problem
+                solving.</b> This is hard to quantify, so I will attempt to do so by
                 giving an example.
                 <br /><br />
                 Early on in the project, we decided that upon clicking on a data
@@ -171,8 +319,8 @@
                 I took a step back and tried to look at the “bigger picture”. I
                 think that as developers its really easy to get stuck with
                 “tunnel vision” which forces us to focus on the wrong problem.
-                We end up trying to fix our solution, instead of focusing on the
-                root problem. The goal was not to double-click, the goal was to
+                <b>We end up trying to fix the solution, instead of focusing on the
+                root problem.</b> The goal was not to double-click, the goal was to
                 navigate to a point on the map. This distinction is important.
                 After some thought, I proposed an alternative to the group. To
                 add a button on the popup itself to navigate to that point.
@@ -188,8 +336,7 @@
                 accomplishments (including this project) to my competence in
                 this skill.
                 <br /><br />
-                1. Mr. Playback
-                <br /><br />
+                <h4>2. Mr. Playback</h4>
                 One key feature of this application was the ability to simulate
                 real-time GPS playback. Let me explain what that means. Our
                 application takes in raw GPS data in an NMEA file format (raw
@@ -197,7 +344,7 @@
                 useable GPS data points containing information such as
                 coordinates, time, vehicle speed, etc. Once these data points
                 are created we can do two things: plot the vehicle route on the
-                map and playback the vehicle position in real-time. The latter
+                map and <b>playback the vehicle position in real-time.</b> The latter
                 was one of my main tasks throughout this project; eventually
                 earning me the name, Mr. Playback.
                 <br /><br />
@@ -215,8 +362,8 @@
                 Additionally, this same “new position” event could be captured
                 by a separate simulation service. This service could output the
                 data to a socket, simulating data coming in from a live GPS
-                module. This functionality enabled our application to be used as
-                a GPS simulation source.
+                module. This functionality <b>enabled our application to be used as
+                a GPS simulation source.</b>
                 <br /><br />
                 The real headache with the playback service was in integrating
                 it alongside many of our other features. For example, the
@@ -235,147 +382,6 @@
                 during our sprint planning. Although it’s not always the most
                 exciting part of our job, planning is the fuel that makes the
                 development train roll.
-              </p>
-            </div>
-          </div>
-          <div id="instasearch-project" class="project-info-box">
-            <div class="project-info-title-box">
-              <a
-                href="https://github.com/sebcontreras/"
-                class="project-info-title"
-                >Instasearch</a
-              >
-            </div>
-            <div class="project-info-img-box">
-              <a
-                href="https://github.com/sebcontreras//"
-                class="project-info-image"
-              >
-                <video class="projects-video-loop" autoplay loop muted>
-                  <source
-                    src="public/images/InstasearchDemo720.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </a>
-            </div>
-            <div class="project-info-text-box">
-              <p class="project-info-description">
-                The best way to explain this project is by first describing the
-                incident that inspired it.
-                <br /><br />
-                A few years ago I was conversing in the car with some friends,
-                when I was suddenly reminded of a meme I had seen on Instagram.
-                The meme was hilarious and more importantly it tied in perfectly
-                with the conversation we were having. I had to find it. I pulled
-                up Instagram and began my search. Although this post was only
-                from a few days ago, the non-chronological timeline, limited
-                search functionality and overwhelming amount of content rendered
-                my search futile.
-                <br /><br />
-                The struggle to find specific posts on a social media platform
-                is of course, largely by design. It’s something I like to call
-                the “IKEA Model”. To illustrate my point, imagine you are
-                shopping for a bed at IKEA. You walk into the store and follow
-                the only path available through the the retail displays. On the
-                way to the bedroom section, you walk through kitchens, living
-                rooms, dining halls and workspaces. It’s not long until the
-                intrusive thoughts kick in: “Ooh that’s a nice table, maybe I’ll
-                get that as well”, “this rug would look great in the living
-                room”. By the time you’ve made it to the beds, you’ve already
-                accumulated an entire shopping list worth of IKEA furniture.
-                Maybe you’ve even forgotten why you came to IKEA in the first
-                place.
-              </p>
-            </div>
-            <div class="project-info-img-box" id="project-info-img-box-ikea">
-              <img
-                class="project-info-image"
-                src="public/images/ikeaStoreLayout.jpg"
-                alt="Image preview of project"
-              />
-            </div>
-            <div class="project-info-text-box" id="second">
-              <p class="project-info-description">
-                IKEA and Instagram follow the same design principle of being
-                inefficient by design. On route to finding that one post you
-                came for, the algorithm bombards you with dozens of posts that
-                it knows you’ll like. These companies don’t value your time,
-                they value your attention.
-                <br /><br />
-                Fast forward to a couple of months later. I had learned a bit
-                about web development and as a result I found it amusing to use
-                `Inspect Element` on websites to see how they are built. Around
-                the same time I had also become fascinated by image recognition
-                software (see my `Image Recognition Tool` project below for more
-                on this). These two new interests would collide one evening when
-                I performed inspect element on an Instagram post and saw the
-                following under the 'alt text' of the image:
-                <br />
-                <em
-                  >"This photo may contain text that says 'US OPEN' 2 people,
-                  outdoors, tennis, Serena Williams"</em
-                >
-                <br /><br />
-                Woah. It appeared as though Instagram had used automated image
-                recognition software to decipher the contents of the image
-                (check out this article to find out why). Something clicked.
-                Could I use this information to build my own advanced Instagram
-                search engine? At this moment, Instasearch was born. Here’s how
-                it works:
-                <br /><br />
-                1. Open the ‘Instasearch' Node.js app and remotely log into your
-                Instagram account.
-                <br /><br />
-                2. Type in some key words related to the post that you are
-                attempting to find (eg. soccer, field, ball, outdoors, ‘when
-                you’re trying to…’), as well as the page name (eg. complex,
-                babyyodamemes, serenawilliams).
-                <br /><br />
-                3. Press enter and wait for Instasearch to do its thing. In the
-                background, it is using a headless Chrome browser controlled by
-                Puppeteer API to scroll through the provided Instagram page. In
-                less than a minute, it’s able to scroll through over 100 posts,
-                retrieving the ‘alt text’ of each image.
-                <br /><br />
-                4. Once complete, Instasearch will return the links and ‘alt
-                text’ of the posts with the most keyword matches.
-                <br /><br />
-                5. If at this point if you still haven’t found the post that
-                you’re after, you can increase the search count, add more
-                keywords or try a different account.
-                <br /><br />
-                Now let’s talk about some of the shortcomings of this project:
-                <br /><br />
-                - For starter’s this project falls under the legal grey area of
-                ’web scrapping’. For this reason, I have decided it would be
-                unwise to publish this project. However, if you would like a
-                demo of this project or a peep into the code, I would be happy
-                to give you a tour.
-                <br /><br />
-                - Modern image recognition software is incredibly powerful (see
-                <a href="https://cloud.google.com/vision">Google Vision AI</a>).
-                However, it’s also incredibly expensive to process a large
-                number of images. For this reason, Meta has chosen to go with a
-                very simple image recognition system. This system is excellent
-                at reading text from an image, but it struggles to detect
-                objects and finer details. This limits the search capabilities
-                of this application. <br /><br />
-                - If you are wondering why I don’t run each image through a
-                superior third part image recognition software, there are two
-                main reasons. The first is that each image could take up to
-                several minutes to process. This means that a simple 100 post
-                search could take hours. The second reason is cost. As
-                previously mentioned, this software is expensive and not meant
-                for mass image processing.
-                <br /><br />
-                That’s Instasearch, my humble effort at fighting back against
-                the evils of the algorithm. I am very proud of this project. For
-                me, it marked the first time I used my programming skills to
-                solve a problem that I had. This was not an assignment or a
-                resume booster, it was a passion project. Something that I would
-                work on every couple of months, each time returning with more
-                refined skills and an equal hatred of social media.
               </p>
             </div>
           </div>
@@ -399,8 +405,8 @@
             </div>
             <div class="project-info-text-box">
               <p class="project-info-description">
-                Using TypeScript I created a tool that allows users to upload an
-                image and highlight points of interest/disinterest on said
+                Using TypeScript I created a tool that allows users to <b>upload an
+                image and highlight points of interest/disinterest</b> on said
                 image. When the user presses the output button, a JSON file is
                 produced which holds the coordinates of each annotation relative
                 to the image.
@@ -429,8 +435,8 @@
                 of interest (POI) on the image. We could even take this a step
                 further and allow the user to label their POIs, and then use
                 this information to build our own datasets on common traffic
-                POIs. Google has used a similar technique (via making users fill
-                out reCAPTCHAs) to aid in their image recognition software.
+                POIs. Google has used a similar technique (via <a href="https://medium.com/@thenextcorner/you-are-helping-google-ai-image-recognition-b24d89372b7e">making users fill
+                out reCAPTCHAs</a>) to aid in their image recognition software.
                 Pretty cool if you ask me!
                 <br /><br />
                 This was one of the first big(ish) individual projects that I
@@ -465,8 +471,8 @@
             </div>
             <div class="project-info-text-box">
               <p class="project-info-description">
-                This project was my first proper dive into learning JavaScript
-                and functional programming. After working through the Mozilla
+                This project was my first proper dive into <b>learning JavaScript
+                and functional programming.</b> After working through the Mozilla
                 JavaScript course, I wanted to apply my new skills by building a
                 project.
                 <br /><br />
@@ -484,7 +490,7 @@
                 calculator app. It was fun to play around with CSS until I got
                 the result that I wanted.
                 <br /><br />
-                Overall, this was a fun beginner project that provided a lot of
+                Overall, this was a <b>fun beginner project</b> that provided a lot of
                 learning opportunities. I recommend it to anyone who is learning
                 functional programming or web development!
               </p>
@@ -522,8 +528,8 @@
                 I have vivid memories of sitting on the top floor of the Taylor
                 Family library, metaphorically (but almost literally) banging my
                 head against the keyboard attempting to get a digital ball to
-                loop around the perimeter of my laptop screen. Learning
-                programming is hard. It requires you to unlock a different way
+                loop around the perimeter of my laptop screen. <b>Learning
+                to code is hard.</b> It requires you to unlock a different way
                 of thinking. I remember being frustrated but ultimately
                 mesmerized when I finally got that damn ball to loop. I had done
                 something. Unlike integrating a function or solving a
@@ -539,9 +545,9 @@
                 As the semester came to a close it was time for the final
                 project, a car dashboard. The objectives were as follows: using
                 an Excel file containing the distance travelled, RPM and fuel
-                tank level of a commuter vehicle over a 10-minute period, build
+                tank level of a commuter vehicle over a 10-minute period, <b>build
                 a car dashboard to display the speed, fuel economy and range of
-                the vehicle in real-time.
+                the vehicle in real-time.</b>
                 <br /><br />
                 Considering the rudimentary programming skills that I possessed
                 at the time, this was a very daunting task. It was my first time
@@ -626,11 +632,6 @@
           </div>
         </div>
       </footer>
-    </div>
-    <div class="icon-tag">
-      Icons made by
-      <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from
-      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div>
   </body>
 </html>

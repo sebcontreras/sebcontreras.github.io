@@ -30,6 +30,12 @@ footer {
     width: 100%;
 }
 
+h4 {
+    font-size: 1.2em;
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+
 h3 {
     font-size: 2.5em;
     font-style: italic;
@@ -49,6 +55,23 @@ h1 {
     font-style: italic;
 }
 
+p > a {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+p > a:visited {
+    color: black;
+}
+
+p > a:hover {
+    color: var(--clr-med);
+}
+
+a:hover {
+    color: var(--clr-med);
+}
+
 button {
     border-radius: 2px;
     background-color: var(--clr-background);
@@ -56,6 +79,11 @@ button {
     color: white;
     padding: 0.5em 1.5em;
     font-size: 1em;
+}
+
+.tab-p {
+    margin-left: 40px;
+    display: inline-block;
 }
 
 .learn-more-button {
@@ -309,14 +337,21 @@ header {
 .introduction-paragraph {
     margin: 1em;
     background-color: white;
-    padding: 0.5em;
+    padding: 2em;
     text-align: left;
     font-size: 1.5em;
+    border-radius: 10px;
+}
+
+.SC-portrait-image-container {
+    width:100%;
+    object-fit: fill;
+    visibility: collapse;
+    display: none;
 }
 
 .SC-portrait-image {
-    width:100%;
-    object-fit: fill;
+    border-radius: 10px;
 }
 
 .video-loop-box {
@@ -551,20 +586,22 @@ th:nth-child(2) {
     background-color: white;
     width: 100%;
     padding: 1em 2em 2em 2em;
-    margin: 1em auto;
+    margin: 1em 0em 6em 0em;
     border-radius: 10px;
 }
 
 .project-info-title {
-    font-size: 2.5em;
-    font-weight: 500;
+    font-size: 3em;
+    font-weight: 750;
     text-decoration: none;
-    text-shadow: 0.25px 0.25px black;
     text-align: center;
+    color: var(--clr-dark);
+    color: black;
 }
 
 .project-info-title-box {
     margin: 0 auto;
+    padding: 1em 0em 0.5em 0em;
     text-align: center;
 }
 
@@ -679,7 +716,7 @@ th:nth-child(2) {
 
 @media (min-width: 1000px) {
    .navigation-option {
-    font-size: 1.5em;
+    font-size: 2em;
    }
    
     .introduction {
@@ -691,11 +728,13 @@ th:nth-child(2) {
        padding-bottom: 0em;
    }
 
-   .SC-portrait-image {
+   .SC-portrait-image-container {
        max-width: 75%;
        grid-column: 3 / span 6;
        grid-row: 2 / span 4;
        border-radius: 10px;
+       visibility: visible;
+       display: block;
    }
 
    .introduction-paragraph {
@@ -763,8 +802,8 @@ th:nth-child(2) {
 
     .project-info-box {
         text-align: left;
-        padding: 2em 2em 2em 2em;
-        margin: 1em auto;
+        padding: 2em 3em 2em 3em;
+        margin: 1em 0em 6em 0em;
     }
 
     .project-info-text-box {
