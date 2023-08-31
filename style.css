@@ -107,7 +107,7 @@ button {
 .projects-video-loop {
     object-fit: cover;
     display: block;
-    height: 100%;
+    height: auto;
     width: 100%;
     grid-column: 1 / span 4;
     grid-row: 1 / span 4;
