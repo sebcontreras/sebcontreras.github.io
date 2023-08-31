@@ -608,7 +608,7 @@ th:nth-child(2) {
 
 .project-info-title-box {
     margin: 0 auto;
-    padding: 1em 0em 0.5em 0em;
+    padding: 1em 0em 1em 0em;
     text-align: center;
 }
 
@@ -643,6 +643,10 @@ th:nth-child(2) {
 
 #calculator-box {
     max-width: 500px;
+}
+
+#calculator {
+    border-radius: 10px;
 }
 
 .project-info-image {
@@ -835,8 +839,9 @@ th:nth-child(2) {
         width: 60%;
         height: auto;
         float: right;
+        margin: 0 auto;
         max-width: 1500px;
-        padding: 3em 1em 0em 1.5em;
+        padding: 0.5em 1em 0em 1.5em;
     }
 
     #project-info-img-box-ikea {
